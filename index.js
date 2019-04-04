@@ -3,9 +3,13 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 import React from 'react';
-import {Text,AppRegistry} from 'react-native';
+import {View,AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-const App = () => ( 
-    <Text>some text</Text>
-);
+import BackGround from './src/components/BackGround';
+
+const App = () =>  (
+    <BackGround/>
+) ;
+
+
 AppRegistry.registerComponent(appName, () => App);
